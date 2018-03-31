@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"> -->
+    <base target="_top">
+    <title>示例 | 全景播放器</title>
+
+    <script type="text/javascript">
+        document.domain = 'moguv.com';
+    </script>
+    
+</head>
+
+<body>
+
+    <div id="itemContainer" class="item-container">
+
+        <div id="poster" class="video-poster"></div>
+        <div id="fullPlay" class="fullPlay"></div>
+        <div id="handGuide" class="handGuide"></div>
+        
+        <div id="videoLoading" class="video-loading">
+            <div class="video-loading-content">
+                <div class="video-loading-body">
+                    <i class="icon-loading-circle"></i>
+                    <p><font color="#FFFFFF">视频正在缓冲加载</font></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="videoLoadingFailed" class="video-loading">
+            <div class="video-loading-content">
+                <div class="video-loading-body">
+                    <i class="icon-loading-failed"></i>
+                    <p><font color="#FFFFFF">视频加载失败</font></p>
+                </div>
+            </div>
+        </div>
+
+        <section id="videoControls" class="video-controls-wrapper">
+            <div class="video-controls-play" id="playBtn"></div>
+            <div class="video-controls-progress">
+                <span id="videoCurrentPosition" class="video-play-duration"><font color="#FFFFFF">00:00</font></span>
+                <div id="progressObtain" class="progress-obtian">
+                    <div id="progressWrap" class="progress-wrapper">
+                        <div id="playProgress" class="progress-play-length">
+                            <span id="progressDot" class="progress-play-dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <span id="videoDuration" class="video-duration"><font color="#FFFFFF">00:00</font></span>
+            </div>
+            <div class="video-controls-screen" id="fullScreenBtn"></div>
+        </section>
+
+    </div>
+    <script type="text/javascript" src="./static/libs/three/three.min.js"></script>
+    <script type="text/javascript" src="./static/libs/hls/hls.min.js"></script>
+</body>
+</html>
